@@ -1,17 +1,18 @@
-If you use this template for research, please [cite it](template_reference.bib):
+Compendium template courtesy of:
 > Kedron, P., & Holler, J. (2023). Template for Reproducible and Replicable Research in Human-Environment and Geographical Sciences. https://doi.org/10.17605/OSF.IO/W29MQ
 
-# Title of Study
+# Full streets and empty waiting rooms? A study of extreme flooding and primary care access in Te Matau-a-Māui, Aotearoa (Hawke's Bay, New Zealand)
 
 ## Contributors
 
-- First Name Last Name\*, email address, @githubname, ORCID link, affiliated institution(s)
-- First Name Last Name, email address, @githubname, ORCID link, affiliated institution(s)
+- Grace Sokolow\*, gracetsokolow@gmail.com, @gsokolow, Middlebury College
 
 \* Corresponding author and creator
 
 ## Abstract
 
+A month of heavy rainfall on the North Island in January 2023 saturated the soils and rivers of Te Matau-a-Māui Hawke's Bay.\[1]\ 
+When Cyclone Gabrielle hit in February, the region experienced "widespread damage and flooding. [...] Over 70,000 residents were left without lifelines including health services, power, road connectivity (in every direction), waste water, drinking water, internet, and cellphone networks \[2]\
 Write a brief abstract about your research project.
 If the project is a reproduction or replication study, include the full citation with a statement
 This study is a *reproduction/replication* of:
@@ -19,6 +20,9 @@ This study is a *reproduction/replication* of:
 > citation to prior study
 
 A graphical abstract of the study could also be included as an image here.
+
+[1](https://disasterphilanthropy.org/disasters/2023-new-zealand-floods/)
+[2](https://www.napier.govt.nz/our-council/cyclone-gabrielle/#:~:text=February%2014%202023%20is%20a,of%20extreme%20isolation%20and%20vulnerability.)
 
 ## Study Metadata
 
