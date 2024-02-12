@@ -38,17 +38,6 @@ In order to prepare ourselves for the climate-altered future that is coming, and
 - `Award info URI`: N/A
 - `Award number`: N/A
 
-## Related to
-
-- `OSF Project`:
-- `Pre-analysis Registration`:
-- `Post-analysis Report Registration`:
-- `Preprint`:
-- `Conference Presentation`:
-- `Publication`:
-- `Prior Study`:
-- `...`:
-
 ## Metadata for access
 
 - `Rights`: [LICENSE](LICENSE): BSD 3-Clause "New" or "Revised"
