@@ -36,7 +36,6 @@ In order to prepare ourselves for the climate-altered future that is coming, and
 
 ## Study design
 
-Describe how the study relates to prior literature, e.g. is it a **original study**, **meta-analysis study**, **reproduction study**, **reanalysis study**, or **replication study**?
 This is an original, observational study. It investigates three research questions:
 1. How long (on average) did it take a resident of Hastings District to get to their nearest primary healthcare provider prior to Cyclone Gabrielle?
 2. How long (on average) did it take a resident of Hastings District to get to their nearest primary healthcare provider immediately following Cyclone Gabrielle? 3 months later? 6 months later?
@@ -52,6 +51,8 @@ Question 3 will be investigated by weighting the travel time from a given geomet
 
 Define the hardware, operating system, and software requirements for the research.
 Include citations to important software projects, plugins or packages and their versions.
+
+Python 3.9
 
 ### Data and variables
 
