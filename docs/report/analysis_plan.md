@@ -62,19 +62,22 @@ For secondary data sources with numerous variables, the analysis plan authors ma
 
 Primary data sources for the study are to include ... .
 Secondary data sources for the study are to include ... .
+ALL SECONDARY?
+NEXT; ADD IN THE GEOMETRY, WHICH HAS TO BE DOWNLOADED SEP. WE WILL USE MATCHING 2018 FOR EASE (?)
 
 Each of the next subsections describes one data source.
 
-#### Primary data source1 name
+#### 2018-SA1-dataset-individual-part-1-Hawke'sBayRegion_updated_28-7-20.xlsx
 
 **Standard Metadata**
 
-- `Abstract`: Brief description of the data source
-- `Spatial Coverage`: Specify the geographic extent of your study. This may be a place name and link to a feature in a gazetteer like GeoNames or OpenStreetMap, or a well known text (WKT) representation of a bounding box.
-- `Spatial Resolution`: Specify the spatial resolution as a scale factor, description of the level of detail of each unit of observation (including administrative level of administrative areas), and/or or distance of a raster GRID size
-- `Spatial Reference System`: Specify the geographic or projected coordinate system for the study
-- `Temporal Coverage`: Specify the temporal extent of your study---i.e. the range of time represented by the data observations.
-- `Temporal Resolution`: Specify the temporal resolution of your study---i.e. the duration of time for which each observation represents or the revisit period for repeated observations
+- `Abstract`: demographic data from the 2018 census
+- `Spatial Coverage`: Hawke's Bay Region [map](https://d1pepq1a2249p5.cloudfront.net/media/documents/North-Island-PNG.png)
+- `Spatial Resolution`: statistical area 1, statistical area 2
+- `Spatial Reference System`: no geometry
+- `Temporal Coverage`: 2018
+- `Temporal Resolution`: 1 day. Data for 'usual residence' and 'night of data collection' are both available.
+  START HERE!! DOWLOADED FROM https://www.stats.govt.nz/information-releases/statistical-area-1-dataset-for-2018-census-updated-march-2020#:~:text=The%20statistical%20area%201%20dataset%20for%202018%20Census,geographies%20%28including%20meshblocks%29%20is%20available%20by%20emailing%20info%40stats.govt.nz. PUBLISHED IN 2020
 - `Lineage`: Describe and/or cite data sources and/or methodological steps planned to create this data source.
   - sampling scheme, including spatial sampling
   - target sample size and method for determining sample size
