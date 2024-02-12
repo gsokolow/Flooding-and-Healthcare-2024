@@ -18,8 +18,7 @@ In order to prepare ourselves for the climate-altered future that is coming, and
 
 
 1. “2023 New Zealand Floods and Cyclone Gabrielle.” Center for Disaster Philanthropy. March 21, 2023. https://disasterphilanthropy.org/disasters/2023-new-zealand-floods/
-2. 2023. https://disasterphilanthropy.org/disasters/2023-new-zealand-floods/
-“Cyclone Gabrielle” Napier City Council. 2023. https://www.napier.govt.nz/our-council/cyclone-gabrielle/#:~:text=February%2014%202023%20is%20a,of%20extreme%20isolation%20and%20vulnerability.
+2. “Cyclone Gabrielle” Napier City Council. 2023. https://www.napier.govt.nz/our-council/cyclone-gabrielle/#:~:text=February%2014%202023%20is%20a,of%20extreme%20isolation%20and%20vulnerability.
 3. “The Climate Action Monitor 2023”. OECD. November 17, 2023. https://www.oecd.org/climate-action/ipac/the-climate-action-monitor-2023-60e338a2/chapter-d1e1621
 
    
