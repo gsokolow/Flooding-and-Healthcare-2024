@@ -37,10 +37,14 @@ In order to prepare ourselves for the climate-altered future that is coming, and
 ## Study design
 
 Describe how the study relates to prior literature, e.g. is it a **original study**, **meta-analysis study**, **reproduction study**, **reanalysis study**, or **replication study**?
+This is an original, observational study. It investigates three research questions:
+1. How long (on average) did it take a resident of Hastings District to get to their nearest primary healthcare provider prior to Cyclone Gabrielle?
+2. How long (on average) did it take a resident of Hastings District to get to their nearest primary healthcare provider immediately following Cyclone Gabrielle? 3 months later? 6 months later?
+3. What population groups were or continue to be most affected by the potential changes in primary healthcare access caused by the storm?
 
-Also describe the original study archetype, e.g. is it **observational**, **experimental**, **quasi-experimental**, or **exploratory**?
-
-Enumerate specific **hypotheses** to be tested or **research questions** to be investigated here, and specify the type of method, statistical test or model to be used on the hypothesis or question.
+Questions 1 and 2 will be investigated using network analysis. 
+Centroids will be created first based on the geometric centers of statistical area 1 geometries, but alternate population weighted centroids may be created for statistical area 2 geometries using meshblock population counts. 
+Question 3 will be investigated by weighting the travel time from a given geometry by the proportion of people who are at a particular socioeconomic advantage or disadvantage.
 
 ## Materials and procedure
 
