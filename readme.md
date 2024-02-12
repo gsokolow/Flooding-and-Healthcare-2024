@@ -11,19 +11,18 @@ Compendium template courtesy of:
 
 ## Abstract
 
-A month of heavy rainfall on the North Island in January 2023 saturated the soils and rivers of Te Matau-a-Māui Hawke's Bay.\[1]\ 
-When Cyclone Gabrielle hit in February, the region experienced "widespread damage and flooding. [...] Over 70,000 residents were left without lifelines including health services, power, road connectivity (in every direction), waste water, drinking water, internet, and cellphone networks \[2]\
-Write a brief abstract about your research project.
-If the project is a reproduction or replication study, include the full citation with a statement
-This study is a *reproduction/replication* of:
+A month of heavy rainfall on the North Island in January 2023 saturated the soils and rivers of Te Matau-a-Māui Hawke's Bay.[1](https://disasterphilanthropy.org/disasters/2023-new-zealand-floods/) 
+When Cyclone Gabrielle hit in February, the region experienced "widespread damage and flooding. [...] Over 70,000 residents were left without lifelines including health services, power, road connectivity (in every direction), waste water, drinking water, internet, and cellphone networks [2](https://www.napier.govt.nz/our-council/cyclone-gabrielle/#:~:text=February%2014%202023%20is%20a,of%20extreme%20isolation%20and%20vulnerability.)
+Cyclone Gabrielle was not simply a destructive anomaly. Climate change is increasing storm frequency and intensity worldwide. [3](https://www.oecd.org/climate-action/ipac/the-climate-action-monitor-2023-60e338a2/chapter-d1e1621) 
+In order to prepare ourselves for the climate-altered future that is coming, and indeed, perhaps already here, it is essential that we understand the potential impacts of severe precipitation events and to whom they pose the greatest risks. In this study, I will investigate the health care access impacts of Cyclone Gabrielle by calculating the travel time from small scale statistical geometries in Te Matau-a-Maui, Hawkes Bay, to the nearest primary care provider, before and after cyclone-induced road closures. Results will be contextualized using population demographics, to better understand how the burden of disaster damage may be unevenly distributed along socioeconomic lines.
 
-> citation to prior study
 
-A graphical abstract of the study could also be included as an image here.
+1. “2023 New Zealand Floods and Cyclone Gabrielle.” Center for Disaster Philanthropy. March 21, 2023. https://disasterphilanthropy.org/disasters/2023-new-zealand-floods/
+2. 2023. https://disasterphilanthropy.org/disasters/2023-new-zealand-floods/
+“Cyclone Gabrielle” Napier City Council. 2023. https://www.napier.govt.nz/our-council/cyclone-gabrielle/#:~:text=February%2014%202023%20is%20a,of%20extreme%20isolation%20and%20vulnerability.
+3. “The Climate Action Monitor 2023”. OECD. November 17, 2023. https://www.oecd.org/climate-action/ipac/the-climate-action-monitor-2023-60e338a2/chapter-d1e1621
 
-[1](https://disasterphilanthropy.org/disasters/2023-new-zealand-floods/)
-[2](https://www.napier.govt.nz/our-council/cyclone-gabrielle/#:~:text=February%2014%202023%20is%20a,of%20extreme%20isolation%20and%20vulnerability.)
-
+   
 ## Study Metadata
 
 - `Key words`: Comma-separated list of keywords (tags) for searchability. Geographers often use one or two keywords each for: theory, geographic context, and methods.
