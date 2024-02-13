@@ -60,10 +60,16 @@ Describe the **data sources** and **variables** to be used.
 Data sources may include plans for observing and recording **primary data** or descriptions of **secondary data**.
 For secondary data sources with numerous variables, the analysis plan authors may focus on documenting only the variables intended for use in the study.
 
-Primary data sources for the study are to include ... .
-Secondary data sources for the study are to include ... .
+Primary data sources for the study are to include ... . HEALTHCARE DATASET?
+Secondary data sources for the study are to include ... . CENSUS DATA
 ALL SECONDARY?
 NEXT; ADD IN THE GEOMETRY, WHICH HAS TO BE DOWNLOADED SEP. WE WILL USE MATCHING 2018 FOR EASE (?)
+***IMPORTANT CODING NOTES FROM JOE FEB 13 AM
+PININV DOES THE SAME THING THAT CREATING A NEW CONDA ENVIRONMENT DOES. DELETE THE FILES CREATED FOR IT AND STICK W CONDA, DOCUMENTING ALL DEPENDENCIES AND NEWLY IMPORTED BACKAGES IN THE REQUIREMENTS .TXT FILE.
+GO TO OSM WEBSITE FOR INSTRUCTIONS ON CREATING A CLEAN CONDA ENVIRONMENT AND DOWNLOADING OSM AS THE FIRST PACKAGE TO AVOID HEADACHES DOWN THE LINE.
+MAYBE ADJUST THE DOWNLOADED XLSX FILE AND USE CSV INSTEAD.
+
+WHEN IT COMES TIME FOR NETWORK ANALYSIS, SEE BEN CORDOLA'S FINAL PROJECT AND OR SAM REUBEN'S INDEP STUDY FOR SIMPLIFIED NETWORK ANALYSIS CODE.
 
 Each of the next subsections describes one data source.
 
@@ -76,8 +82,25 @@ Each of the next subsections describes one data source.
 - `Spatial Resolution`: statistical area 1, statistical area 2
 - `Spatial Reference System`: no geometry
 - `Temporal Coverage`: 2018
-- `Temporal Resolution`: 1 day. Data for 'usual residence' and 'night of data collection' are both available.
+- `Temporal Resolution`: Snapshot (1 day). Data for 'usual residence' and 'night of data collection' are both available.
   START HERE!! DOWLOADED FROM https://www.stats.govt.nz/information-releases/statistical-area-1-dataset-for-2018-census-updated-march-2020#:~:text=The%20statistical%20area%201%20dataset%20for%202018%20Census,geographies%20%28including%20meshblocks%29%20is%20available%20by%20emailing%20info%40stats.govt.nz. PUBLISHED IN 2020
+  `Lineage`: Downloaded from [StatsNZ](https://www.stats.govt.nz/information-releases/statistical-area-1-dataset-for-2018-census-updated-march-2020#:~:text=The%20statistical%20area%201%20dataset%20for%202018%20Census,geographies%20%28including%20meshblocks%29%20is%20available%20by%20emailing%20info%40stats.govt.nz.%20PUBLISHED%20IN%202020) on February 12, 2024. Download Data > Regional Files (Microsoft Excel Open XML) > Hawke's Bay Region (Updated november 2021) > 2018-SA1-dataset-individual-part-1-Hawke'sBayregion_updated_28-7-20.xlsx
+- `Distribution`: Distributed by [StatsNZ](https://www.stats.govt.nz/information-releases/statistical-area-1-dataset-for-2018-census-updated-march-2020#:~:text=The%20statistical%20area%201%20dataset%20for%202018%20Census,geographies%20%28including%20meshblocks%29%20is%20available%20by%20emailing%20info%40stats.govt.nz.%20PUBLISHED%20IN%202020)
+- `Constraints`: Lic3ensed for re-use under a Creative Commons 4.0 International License
+- `Data Quality`: Usually resident population count, age, and sex data is of very high quality; ethnicity, languages spoken, and ethnicity data is of high quality according to StatsNZ (see footnotes in database)
+- `Variables`:
+| Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| statistical area 1 code (2018 variables) | ... | unique identifier for 2018 statistical area 1s | int | ... | \[7013477, 7022500] | ... | ... |
+| census usually resident population count > 2018 | ... | population count of people who usually reside in this statistical area | ... | ... | ... | ... | ... |
+
+**PRIMARY**
+    `Abstract`: Brief description of the data source
+- `Spatial Coverage`: Specify the geographic extent of your study. This may be a place name and link to a feature in a gazetteer like GeoNames or OpenStreetMap, or a well known text (WKT) representation of a bounding box.
+- `Spatial Resolution`: Specify the spatial resolution as a scale factor, description of the level of detail of each unit of observation (including administrative level of administrative areas), and/or or distance of a raster GRID size
+- `Spatial Reference System`: Specify the geographic or projected coordinate system for the study
+- `Temporal Coverage`: Specify the temporal extent of your study---i.e. the range of time represented by the data observations.
+- `Temporal Resolution`: Specify the temporal resolution of your study---i.e. the duration of time for which each observation represents or the revisit period for repeated observations
 - `Lineage`: Describe and/or cite data sources and/or methodological steps planned to create this data source.
   - sampling scheme, including spatial sampling
   - target sample size and method for determining sample size
