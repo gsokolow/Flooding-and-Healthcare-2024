@@ -73,6 +73,7 @@ WHEN IT COMES TIME FOR NETWORK ANALYSIS, SEE BEN CORDOLA'S FINAL PROJECT AND OR 
 
 Each of the next subsections describes one data source.
 
+***** NOTE: for sa1 files, the column names for NR, PO, PP had to be changed because the accent mark on Maori was not readable by the code. I made those edits and saved the new version of the data under data > derived, but am not sure how to include that in this plan. 
 #### 2018-SA1-dataset-individual-part-1-Hawke'sBayRegion_updated_28-7-20.xlsx
 
 **Standard Metadata**
@@ -83,9 +84,8 @@ Each of the next subsections describes one data source.
 - `Spatial Reference System`: no geometry
 - `Temporal Coverage`: 2018
 - `Temporal Resolution`: Snapshot (1 day). 
-  `Lineage`: Downloaded from [StatsNZ](https://www.stats.govt.nz/information-releases/statistical-area-1-dataset-for-2018-census-updated-march-2020#:~:text=The%20statistical%20area%201%20dataset%20for%202018%20Census,geographies%20%28including%20meshblocks%29%20is%20available%20by%20emailing%20info%40stats.govt.nz.%20PUBLISHED%20IN%202020) on February 12, 2024 as an xlsx file. Download Data > Regional Files (Microsoft Excel Open XML) > Hawke's Bay Region (Updated november 2021) > 2018-SA1-dataset-individual-part-1-Hawke'sBayregion_updated_28-7-20.xlsx. Downloaded again as a collection of zipped, long format CSV files on February 17 from the same site. Download data > Total New Zealand files > Statistical area 1 dataset for 2018 Census, total New Zealand – long format (updated 16 July 2020) – CSV (zipped file, 214MB).
-From the zipped folder, 5 raw files were extracted and uploaded to the compendium under data > raw > public.
-Statistical Area 1 dataset for Census 2018 - total New Zealand - Long format_updated_16-7-20 > Individual_part1_totalNZ_updated_16-7-20 > Census_usually_resident_pop_count-long_format_updated_16-7-20.csv, Age_five_year_groups_by_sex-long_format_updated_16-7-20.csv, Ethnic_group-long_format_updated-16-7-20.csv, Maori_descent-long_format_updated_16-7-20.csv, Sex-long_format_updated_16-7-20.csv. 
+  `Lineage`: Downloaded from [StatsNZ](https://www.stats.govt.nz/information-releases/statistical-area-1-dataset-for-2018-census-updated-march-2020#:~:text=The%20statistical%20area%201%20dataset%20for%202018%20Census,geographies%20%28including%20meshblocks%29%20is%20available%20by%20emailing%20info%40stats.govt.nz.%20PUBLISHED%20IN%202020) on February 12, 2024 as an xlsx file. Download Data > Regional Files (Microsoft Excel Open XML) > Hawke's Bay Region (Updated november 2021) > 2018-SA1-dataset-individual-part-1-Hawke'sBayregion_updated_28-7-20.xlsx. Downloaded again as a CSV file on February 17 from the same site. Download data > Total New Zealand files > Statistical area 1 dataset for 2018 Census, total New Zealand (updated 16 July 2020) – CSV (zipped file, 32MB).
+From the zipped folder, one file was copied into data > raw > public > Individual_part1_totalNZ-wide_format_updated_16-7-20.csv. 
 - `Distribution`: Distributed by [StatsNZ](https://www.stats.govt.nz/information-releases/statistical-area-1-dataset-for-2018-census-updated-march-2020#:~:text=The%20statistical%20area%201%20dataset%20for%202018%20Census,geographies%20%28including%20meshblocks%29%20is%20available%20by%20emailing%20info%40stats.govt.nz.%20PUBLISHED%20IN%202020)
 - `Constraints`: Licensed for re-use under a Creative Commons 4.0 International License
 - `Data Quality`: Usually resident population count, age, and sex data is of very high quality; ethnicity, languages spoken, and ethnicity data is of high quality according to StatsNZ (see footnotes in database)
