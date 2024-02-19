@@ -92,8 +92,8 @@ From the zipped folder, one file was copied into data > raw > public > Individua
 - `Variables`:
 | Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| Area_code_and_description | ... | unique identifier for 2018 statistical area 1s | int | ... | \[7013477, 7022500] | ... | ... |
-| Census_2018_usually_resident_population_count | ... | population count of people who usually reside in this statistical area | ... | ... | ... | ... | ... |
+| Area_code_and_description | ... | unique identifier for 2018 statistical area 1s | object | ... | N/A | 0 | 0 |
+| Census_2018_usually_resident_population_count | ... | population count of people who usually reside in this statistical area | int64 | ... | ... | ... | ... |
 
 **PRIMARY**
     `Abstract`: Brief description of the data source
