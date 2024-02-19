@@ -80,7 +80,7 @@ Each of the next subsections describes one data source.
 
 - `Abstract`: demographic data from the 2018 census
 - `Spatial Coverage`: Hawke's Bay Region [map](https://d1pepq1a2249p5.cloudfront.net/media/documents/North-Island-PNG.png)
-- `Spatial Resolution`: statistical area 1, statistical area 2
+- `Spatial Resolution`: statistical area 1
 - `Spatial Reference System`: no geometry
 - `Temporal Coverage`: 2018
 - `Temporal Resolution`: Snapshot (1 day). 
@@ -92,8 +92,8 @@ From the zipped folder, one file was copied into data > raw > public > Individua
 - `Variables`:
 | Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| statistical area 1 code (2018 variables) | ... | unique identifier for 2018 statistical area 1s | int | ... | \[7013477, 7022500] | ... | ... |
-| census usually resident population count > 2018 | ... | population count of people who usually reside in this statistical area | ... | ... | ... | ... | ... |
+| Area_code_and_description | ... | unique identifier for 2018 statistical area 1s | int | ... | \[7013477, 7022500] | ... | ... |
+| Census_2018_usually_resident_population_count | ... | population count of people who usually reside in this statistical area | ... | ... | ... | ... | ... |
 
 **PRIMARY**
     `Abstract`: Brief description of the data source
