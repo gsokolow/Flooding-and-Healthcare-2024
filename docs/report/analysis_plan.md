@@ -90,6 +90,7 @@ From the zipped folder, one file was copied into data > raw > public > Individua
 - `Constraints`: Licensed for re-use under a Creative Commons 4.0 International License
 - `Data Quality`: Usually resident population count, age, and sex data is of very high quality; ethnicity, languages spoken, and ethnicity data is of high quality according to StatsNZ (see footnotes in database)
 - `Variables`:
+- *Note that little information about variable definitions is available from StatsNZ. The [Aria classification](https://aria.stats.govt.nz/aria/?_ga=2.154898296.1121281586.1708393924-651550336.1707765003#Home:) management system provided additional details, particularly about subcategories listed for certain variable groups. 
 | Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 | Area_code_and_description | ... | unique identifier for 2018 statistical area 1s | object | ... | N/A | 0 | 0 |
