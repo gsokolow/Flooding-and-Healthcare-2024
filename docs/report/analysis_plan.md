@@ -73,8 +73,8 @@ WHEN IT COMES TIME FOR NETWORK ANALYSIS, SEE BEN CORDOLA'S FINAL PROJECT AND OR 
 
 Each of the next subsections describes one data source.
 
-***** NOTE: for sa1 files, the column names for NR, PO, PP had to be changed because the accent mark on Maori was not readable by the code. I made those edits and saved the new version of the data under data > derived, but am not sure how to include that in this plan. 
-#### 2018-SA1-dataset-individual-part-1-Hawke'sBayRegion_updated_28-7-20.xlsx
+
+#### Individual_part1_totalNZ-wide_format_updated_16-7-20.csv
 
 **Standard Metadata**
 
@@ -85,17 +85,53 @@ Each of the next subsections describes one data source.
 - `Temporal Coverage`: 2018
 - `Temporal Resolution`: Snapshot (1 day). 
   `Lineage`: Downloaded from [StatsNZ](https://www.stats.govt.nz/information-releases/statistical-area-1-dataset-for-2018-census-updated-march-2020#:~:text=The%20statistical%20area%201%20dataset%20for%202018%20Census,geographies%20%28including%20meshblocks%29%20is%20available%20by%20emailing%20info%40stats.govt.nz.%20PUBLISHED%20IN%202020) on February 12, 2024 as an xlsx file. Download Data > Regional Files (Microsoft Excel Open XML) > Hawke's Bay Region (Updated november 2021) > 2018-SA1-dataset-individual-part-1-Hawke'sBayregion_updated_28-7-20.xlsx. Downloaded again as a CSV file on February 17 from the same site. Download data > Total New Zealand files > Statistical area 1 dataset for 2018 Census, total New Zealand (updated 16 July 2020) – CSV (zipped file, 32MB).
-From the zipped folder, one file was copied into data > raw > public > Individual_part1_totalNZ-wide_format_updated_16-7-20.csv. 
+From the zipped folder, one file was copied into data > raw > public > Individual_part1_totalNZ-wide_format_updated_16-7-20.csv.
+On February 14, 2024, the author changed the column names for NR, PO, PP because pyhton was unable to read the accent mark on Maori.
+The results are saved under data > derived > public > Individual_part1_totalNZ-wide_format_updated_16-7-20_adjusted_labels.csv.
+On February 19, 2024, the author wrote definitions for each variable of interest to this study, based on the best available information including the [Aria classification](https://aria.stats.govt.nz/aria/?_ga=2.154898296.1121281586.1708393924-651550336.1707765003#Home:) management system. The author was unable to find existing variable definitions from StatsNZ.
+On February 20, 2024, the author generated a comprehensive metadata file with the following information for each variable of interest to this study:
+    - Variable Name
+    - Data Type
+    - Minimum Value
+    - Maximum Value
+    - Frequency of Missing Data (includes data marked as 'C" for confidential)
+    - Definition (derived by the author)
+This metadata file can be found under data > metadata > 2018_Census_Statistical_Area1_Metadata_Derived.csv
 - `Distribution`: Distributed by [StatsNZ](https://www.stats.govt.nz/information-releases/statistical-area-1-dataset-for-2018-census-updated-march-2020#:~:text=The%20statistical%20area%201%20dataset%20for%202018%20Census,geographies%20%28including%20meshblocks%29%20is%20available%20by%20emailing%20info%40stats.govt.nz.%20PUBLISHED%20IN%202020)
 - `Constraints`: Licensed for re-use under a Creative Commons 4.0 International License
-- `Data Quality`: Usually resident population count, age, and sex data is of very high quality; ethnicity, languages spoken, and ethnicity data is of high quality according to StatsNZ (see footnotes in database)
-- `Variables`: *** see csv in metadataforlder 
-- *Note that little information about variable definitions is available from StatsNZ. The [Aria classification](https://aria.stats.govt.nz/aria/?_ga=2.154898296.1121281586.1708393924-651550336.1707765003#Home:) management system provided additional details, particularly about subcategories listed for certain variable groups. 
-| Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| Area_code_and_description | ... | unique identifier for 2018 statistical area 1s | object | ... | N/A | 0 | 0 |
-| Census_2018_usually_resident_population_count | ... | population count of people who usually reside in this statistical area | int64 | ... | ... | ... | ... |
+- `Data Quality`: Usually resident population count, age, and sex data is of very high quality; ethnicity and Maori descent data is of high quality according to StatsNZ (see footnotes in database)
+- `Variables`: Metadata for these variables can be found under data > metadata > 2018_Census_Statistical_Area1_Metadata_Derived.csv
+   - Area_code_and_description
+   - Census_2018_usually_resident_population_count
+   - Census_2018_Sex_1_Male_CURP
+   - Census_2018_Sex_2_Female_CURP
+   - Census_2018_Sex_Total_CURP
+   - Census_2018_median_age_CURP
+   - Census_2018_Age_broad_groups_1_Under_15_years_CURP
+   - Census_2018_Age_broad_groups_2_15_to_29_years_CURP
+   - Census_2018_Age_broad_groups_3_30_to_64_years_CURP
+   - Census_2018_Age_broad_groups_4_65_years_and_over_CURP
+   - Census_2018_Age_broad_groups_Total_CURP
+   - Census_2018_Ethnicity_grouped_total_responses_level_1_1_European_CURP
+   - Census_2018_Ethnicity_grouped_total_responses_level_1_3_Pacific_Peoples_CURP
+   - Census_2018_Ethnicity_grouped_total_responses_level_1_2_Maori_CURP
+   - Census_2018_Ethnicity_grouped_total_responses_level_1_4_Asian_CURP
+   - Census_2018_Ethnicity_grouped_total_responses_level_1_5_Middle_Eastern_Latin_American_African_CURP
+   - Census_2018_Ethnicity_grouped_total_responses_level_1_6_Other_Ethnicity_CURP
+   - Census_2018_Ethnicity_grouped_total_responses_level_2_61_New_Zealander_CURP
+   - Census_2018_Ethnicity_grouped_total_responses_level_2_69_Other_Ethnicity_nec_CURP
+   - Census_2018_Ethnicity_grouped_total_responses_Total_stated_CURP
+   - Census_2018_Ethnicity_grouped_total_responses_level_1_9_Not_Elsewhere_Included_CURP
+   - Census_2018_Ethnicity_grouped_total_responses_Total_CURP
+   - Census_2018_Maori_descent_01_Maori_descent_CURP
+   - Census_2018_Maori_descent_02_No_Maori_descent_CURP
+   - Census_2018_Maori_descent_04_Dont_know_CURP
+   - Census_2018_Maori_descent_Total_stated_CURP
+   - Census_2018_Maori_descent_99_Not_elsewhere_included_CURP
+   - Census_2018_Maori_descent_Total_CURP
+ 
 
+#### SA1 GEOMETRIES
 **PRIMARY**
     `Abstract`: Brief description of the data source
 - `Spatial Coverage`: Specify the geographic extent of your study. This may be a place name and link to a feature in a gazetteer like GeoNames or OpenStreetMap, or a well known text (WKT) representation of a bounding box.
