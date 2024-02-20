@@ -89,7 +89,7 @@ From the zipped folder, one file was copied into data > raw > public > Individua
 - `Distribution`: Distributed by [StatsNZ](https://www.stats.govt.nz/information-releases/statistical-area-1-dataset-for-2018-census-updated-march-2020#:~:text=The%20statistical%20area%201%20dataset%20for%202018%20Census,geographies%20%28including%20meshblocks%29%20is%20available%20by%20emailing%20info%40stats.govt.nz.%20PUBLISHED%20IN%202020)
 - `Constraints`: Licensed for re-use under a Creative Commons 4.0 International License
 - `Data Quality`: Usually resident population count, age, and sex data is of very high quality; ethnicity, languages spoken, and ethnicity data is of high quality according to StatsNZ (see footnotes in database)
-- `Variables`:
+- `Variables`: *** see csv in metadataforlder 
 - *Note that little information about variable definitions is available from StatsNZ. The [Aria classification](https://aria.stats.govt.nz/aria/?_ga=2.154898296.1121281586.1708393924-651550336.1707765003#Home:) management system provided additional details, particularly about subcategories listed for certain variable groups. 
 | Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |

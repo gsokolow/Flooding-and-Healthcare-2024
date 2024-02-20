@@ -1,0 +1,29 @@
+,data type,minimum,maximum,NaN frequency,definition
+Area_code_and_description,object,001 Far North District,Total NZ (Ward),0.0,unique identifier for statistical area 1
+Census_2018_usually_resident_population_count,int64,0,4699755,0.0,number of usual residents (as opposed to population at the moment of census collection) in a given statistical area 1 in 2018
+Census_2018_Sex_1_Male_CURP,float64,0.0,2319558.0,0.017680883121675227,number of usual male residents in 2018
+Census_2018_Sex_2_Female_CURP,float64,0.0,2380197.0,0.017680883121675227,number of usual female residents in 2018
+Census_2018_Sex_Total_CURP,int64,0,4699755,0.0,total number of usual residents for which data on sex was collected
+Census_2018_median_age_CURP,float64,5.8,92.3,0.018203622274837798,median age of usual residents in 2018
+Census_2018_Age_broad_groups_1_Under_15_years_CURP,float64,0.0,923403.0,0.019064604409458504,number of usual residents under 15 years old in 2018
+Census_2018_Age_broad_groups_2_15_to_29_years_CURP,float64,0.0,963687.0,0.019064604409458504,number of usual residents aged 15-29 in 2018
+Census_2018_Age_broad_groups_3_30_to_64_years_CURP,float64,0.0,2097498.0,0.018880108237754066,number of usual residents aged 30-64 in 2018
+Census_2018_Age_broad_groups_4_65_years_and_over_CURP,float64,0.0,715167.0,0.019033855047507764,number of usual residents aged 65 and older in 2018
+Census_2018_Age_broad_groups_Total_CURP,int64,0,4699755,0.0,total number of usual residents placed in the 4 listed age groups in 2018
+Census_2018_Ethnicity_grouped_total_responses_level_1_1_European_CURP,float64,0.0,3297864.0,0.01866486270409889,total number of usual residents who self-identify as ethnically European (note that respondents may choose more than one ethnicity)'
+Census_2018_Ethnicity_grouped_total_responses_level_1_2_Maori_CURP,float64,0.0,775836.0,0.020386826973340304,total number of usual residents who self-identify ethnically as Maori (note that respondents may choose more than one ethnicity)'
+Census_2018_Ethnicity_grouped_total_responses_level_1_3_Pacific_Peoples_CURP,float64,0.0,381642.0,0.02044832569724178,total number of usual residents who self-identify ethnically as Pacific Peoples (note that respondents may choose more than one ethnicity)'
+Census_2018_Ethnicity_grouped_total_responses_level_1_4_Asian_CURP,float64,0.0,707598.0,0.02041757633529104,total number of usual residents who self-identify ethnically as Asian (note that respondents may choose more than one ethnicity)'
+Census_2018_Ethnicity_grouped_total_responses_level_1_5_Middle_Eastern_Latin_American_African_CURP,float64,0.0,70332.0,0.02044832569724178,"total number of usual residents who self-identify ethnically as Middle Eastern, Latin American, or African (note that respondents may choose more than one ethnicity)"
+Census_2018_Ethnicity_grouped_total_responses_level_1_6_Other_Ethnicity_CURP,float64,0.0,58053.0,0.02044832569724178,total number of usual residents who self-identify with another ethnicity not listed (note that respondents may choose more than one ethnicity)
+Census_2018_Ethnicity_grouped_total_responses_level_2_61_New_Zealander_CURP,float64,0.0,45330.0,0.02250853294794133,total number of usual residents who self-intentify ethnically as a New Zealander under ethnicities not listed (note that respondents may choose more than one ethnicity)
+Census_2018_Ethnicity_grouped_total_responses_level_2_69_Other_Ethnicity_nec_CURP,float64,0.0,12756.0,0.02250853294794133,total number of usual residents who self-identify ethnically with another ethnicity not listed under ethnicities not listed (note that respondents may choose more than one ethnicity. Note that this definition is interpered based on limited available information)
+Census_2018_Ethnicity_grouped_total_responses_Total_stated_CURP,float64,6.0,4699755.0,0.018203622274837798,total number of usual residents who self-identify ethnically with one or more of the listed groups
+Census_2018_Ethnicity_grouped_total_responses_level_1_9_Not_Elsewhere_Included_CURP,float64,0.0,0.0,0.02044832569724178,"total number of usual residents who responded 'Don't Know' or who's answer was refused, repeated, outside the scope, not stated, or unidentifiable to questions of ethnicity."
+Census_2018_Ethnicity_grouped_total_responses_Total_CURP,int64,0,4699755,0.0,"total number of usual residents who self-identify ethnically with one or more of the listed groups or who responded 'Don't Know' or who's answer was refused, repeated, outside the scope, not stated, or unidentifiable to questions of ethnicity."
+Census_2018_Maori_descent_01_Maori_descent_CURP,float64,0.0,869850.0,0.019003105685557024,total number of usual residents who self-identify as being of Maori descent in 2018
+Census_2018_Maori_descent_02_No_Maori_descent_CURP,float64,0.0,3715050.0,0.01857261461824667,total number of usual residents who self-identify as not being of Maori descent in 2018
+Census_2018_Maori_descent_04_Dont_know_CURP,float64,0.0,114855.0,0.019064604409458504,total number of usual residents who self-identify as not knowing if they are of Maori descent in 2018
+Census_2018_Maori_descent_Total_stated_CURP,float64,6.0,4699755.0,0.018203622274837798,"total number of usual residents who self-identify as being of Maori descent, not of Maori descent, or not knowing if they are of Maori descent in 2018"
+Census_2018_Maori_descent_99_Not_elsewhere_included_CURP,float64,0.0,0.0,0.019064604409458504,total number of usual residents whose response to questions about being of Maori descent were not stated or unidentifiable in 2018
+Census_2018_Maori_descent_Total_CURP,int64,0,4699755,0.0,"total number of usual residents who self idenify as being of, not of, or not knowing if they are of Maori descent, or whose response to questions about being of Maori descent were not stated or unidentifiable in 2018."
