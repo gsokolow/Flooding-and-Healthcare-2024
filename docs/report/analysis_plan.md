@@ -158,8 +158,6 @@ This metadata file can be found under data > metadata > 2018_Census_Statistical_
 
 
 
-
-
 **PRIMARY**
     `Abstract`: Brief description of the data source
 - `Spatial Coverage`: Specify the geographic extent of your study. This may be a place name and link to a feature in a gazetteer like GeoNames or OpenStreetMap, or a well known text (WKT) representation of a bounding box.
