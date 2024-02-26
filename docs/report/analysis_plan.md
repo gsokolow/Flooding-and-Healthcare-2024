@@ -131,21 +131,31 @@ This metadata file can be found under data > metadata > 2018_Census_Statistical_
    - Census_2018_Maori_descent_Total_CURP
  
 
-#### SA1 GEOMETRIES
+#### statistical-area-1-2018-generalised.gpkg
 
 **Standard Metadata**
 
 - `Abstract`: statistical area 1 geometries from the 2018 census
 - `Spatial Coverage`: Hawke's Bay Region (roughly approximated) ![map](../../data/metadata/SA1_2018_fileExtent.png)
 - `Spatial Resolution`: statistical area 1
-- `Spatial Reference System`: 
-- `Temporal Coverage`: 2018
+- `Spatial Reference System`: ESPG:2193
+- `Temporal Coverage`: 2018.
 - `Temporal Resolution`: Snapshot (1 day). 
-  `Lineage`: Downloaded from [StatsNZ](https://www.stats.govt.nz/information-releases/statistical-area-1-dataset-for-2018-census-updated-march-2020#:~:text=The%20statistical%20area%201%20dataset%20for%202018%20Census,geographies%20%28including%20meshblocks%29%20is%20available%20by%20emailing%20info%40stats.govt.nz.%20PUBLISHED%20IN%202020) on February 12, 2024 as an xlsx file. Download Data > Regional Files (Microsoft Excel Open XML) > Hawke's Bay Region (Updated november 2021) > 2018-SA1-dataset-individual-part-1-Hawke'sBayregion_updated_28-7-20.xlsx. Downloaded again as a CSV file on February 17 from the same site. Download data > Total New Zealand files > Statistical area 1 dataset for 2018 Census, total New Zealand (updated 16 July 2020) – CSV (zipped file, 32MB).
-From the zipped folder, one file was copied into data > raw > public > Individual_part1_totalNZ-wide_format_updated_16-7-20.csv.
-On February 14, 2024, the author changed the column names for NR, PO, PP because pyhton was unable to read the accent mark on Maori.
-The results are saved under data > derived > public > Individual_part1_totalNZ-wide_format_updated_16-7-20_adjusted_labels.csv.
-On February 19, 2024, the author wrote definitions for each variable of interest to this study, based on the best available information including the [Aria classification](https://aria.stats.govt.nz/aria/?_ga=2.154898296.1121281586.1708393924-651550336.1707765003#Home:) management system. The author was unable to find existing variable definitions from StatsNZ.
+  `Lineage`: Downloaded from [StatsNZ](https://datafinder.stats.govt.nz/layer/92210-statistical-area-1-2018-generalised/) on February 26, 2024 as a geopackage.
+  Export options:
+      - Coordinate Reference System: ESPG: 2193 (default)
+      - Vector type: GeoPackage/SQLite
+      - Crop to Rectangle: adjust rectangle boundaries to approximate the image linked under 'spatial coverage', leaving room for error
+  Create download (should say ~5mb and download in around 9mb)
+  his metadata file can be found under data > metadata > 2018_Census_Statistical_Area1_Metadata_Derived.csv
+- `Distribution`: Distributed by [StatsNZ](https://datafinder.stats.govt.nz/layer/92210-statistical-area-1-2018-generalised/)
+- `Constraints`: Licensed for re-use under a Creative Commons 4.0 International License
+- `Data Quality`: not listed
+- - `Variables`: 
+   | Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| SA12018_V1_00 | SA1 | unique identifier for SA1 geometries | vector | unknown | ... | ... | 16 out of 29,889 |
+
 
 
 
