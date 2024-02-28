@@ -189,6 +189,10 @@ This metadata file can be found under data > metadata > 2018_Census_Statistical_
 - see the STUFF article with interactive dragonfly map showing flooding - it may be useful for creating a hypothetical map https://www.stuff.co.nz/national/300814264/cyclone-gabrielle-map-shows-scale-of-deluge-across-hawkes-bay
 - hawke's bay hazard portal https://gis.hbrc.govt.nz/hazards/
 
+### DATA SOURCE FOR HEALTH PROVIDERS
+- might be more rigorous to write a web scraping code but more efficient for me to just plug and chug to create a dataset: https://healthhb.co.nz/general-practices/
+- NOTE this would need to happen in QGIS by creating a new vector layer, plugging each address into google maps, and then copying in the coordinates. It would be great to scrape that but it seems pretty darn difficult!
+
 
 
 **PRIMARY**
