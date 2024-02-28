@@ -147,7 +147,6 @@ This metadata file can be found under data > metadata > 2018_Census_Statistical_
       - Vector type: GeoPackage/SQLite
       - Crop to Rectangle: adjust rectangle boundaries to approximate the image linked under 'spatial coverage', leaving room for error
   Create download (should say ~5mb and download in around 9mb)
-  his metadata file can be found under data > metadata > 2018_Census_Statistical_Area1_Metadata_Derived.csv
 - `Distribution`: Distributed by [StatsNZ](https://datafinder.stats.govt.nz/layer/92210-statistical-area-1-2018-generalised/)
 - `Constraints`: Licensed for re-use under a Creative Commons 4.0 International License
 - `Data Quality`: not listed
@@ -155,6 +154,40 @@ This metadata file can be found under data > metadata > 2018_Census_Statistical_
    | Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 | SA12018_V1_00 | SA1 | unique identifier for SA1 geometries | vector | unknown | ... | ... | 16 out of 29,889 |
+
+#### nz-road-centrelines-topo-1500k.gpkg
+
+**Standard Metadata**
+
+- `Abstract`: road centrelines from June 2022 (latest available data prior to February 2023)
+- `Spatial Coverage`: Hawke's Bay Region (roughly approximated) ![map](../../data/metadata/SA1_2018_fileExtent.png)
+- `Spatial Resolution`: statistical area 1
+- `Spatial Reference System`: ESPG:2193
+- `Temporal Coverage`: 2022
+- `Temporal Resolution`: Snapshot (1 day). 
+  `Lineage`: Downloaded from [Koordinates](https://koordinates.com/from/data.linz.govt.nz/layer/50225-nz-road-centrelines-topo-1500k/) on February 28, 2024 as a geopackage.
+  Export options:
+      - Coordinate Reference System: ESPG: 2193 (default)
+      - Vector type: GeoPackage/SQLite
+      - Crop to Rectangle: adjust rectangle boundaries to approximate the image linked under 'spatial coverage', leaving room for error
+  Create download (should say ~1mb and download in around 2mb)
+- `Distribution`: Distributed by [Land Information New Zealand](https://koordinates.com/from/data.linz.govt.nz/layer/50225-nz-road-centrelines-topo-1500k/).
+  Note that historical data is most easily downloadable via the Koordinates app, but the most up to date information can be viewed and downloaded directly from [LINZ](https://data.linz.govt.nz/layer/50329-nz-road-centrelines-topo-150k/) 
+- `Constraints`: Licensed for re-use under a Creative Commons 4.0 International License
+- `Data Quality`: not listed
+- - `Variables`: all listed as NULL.
+   | Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+
+
+### DATA SOURCES FOR ROAD CLOSURES
+
+- see the recovery newletters from waka kotahi (detailed, but the first and second letters missing) - https://www.nzta.govt.nz/projects/hawkes-bay-cyclone-recovery/media
+- see the waka kotahi state highways repair database and trace/manually copy the data - https://nzta.maps.arcgis.com/apps/dashboards/041d9f7c531d4f2488d1d1d9d6d6b86c
+- see the table for when access points at damaged bridges were restored - https://www.hastingsdc.govt.nz/services/roads-and-streets/road-works/
+- see NZ herald map for state highway road closures immediately following the storm - https://www.nzherald.co.nz/nz/cyclone-gabrielle-maps-show-widespread-disruption-to-north-island-roading-network/7IDFSZC2CZGJDNEHSBZTT7G2TM/
+- see the STUFF article with interactive dragonfly map showing flooding - it may be useful for creating a hypothetical map https://www.stuff.co.nz/national/300814264/cyclone-gabrielle-map-shows-scale-of-deluge-across-hawkes-bay
+- hawke's bay hazard portal https://gis.hbrc.govt.nz/hazards/
 
 
 
