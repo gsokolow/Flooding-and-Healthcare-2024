@@ -190,7 +190,12 @@ This metadata file can be found under data > metadata > 2018_Census_Statistical_
 - `Spatial Reference System`: ESPG:2193
 - `Temporal Coverage`: February 12, 2023 - June 12, 2023
 - `Temporal Resolution`: 4 months of snapshot data. 
-  `Lineage`: Created by study author Grace Sokolow using facebook posts from Waka Kotahi NZ Transport Agency - Hawke's Bay and Gisborne and news articles from NZ Herald and 1 News. The author attempted to get access to road closure data during this time period from Waka Kotahi, Napier City Council, Heretaunga Hastings District Council, Hb Emergency Management, and Dragonfly. In order to continue this project on it's scheduled timeline, the author created a limited road closure database.
+  `Lineage`: Created by study author Grace Sokolow using facebook posts from Waka Kotahi NZ Transport Agency - Hawke's Bay and Gisborne and news articles from NZ Herald and 1 News. The author attempted to get access to road closure data during this time period from Waka Kotahi, Napier City Council, Heretaunga Hastings District Council, Hb Emergency Management, and Dragonfly. In order to continue this project on it's scheduled timeline, the author created a limited road closure database. Partial closures, short term closures (ie scheduled for one - two days), and closures due to crashes were excluded from this dataset.
+  Data sources used
+1. [Waka Kotahi NZ Transport Agency - Hawke's Bay and Gisborne Facebook Page](https://www.facebook.com/WakaKotahiHBG)
+2. [NZ Herald "Cyclone Gabrielle's anger hits Hawke's Bay: Hundreds of homes evacuated, thousands could be without power for days"](https://www.nzherald.co.nz/hawkes-bay-today/news/gabrielles-anger-hits-hawkes-bay/D6S5TKAQPRBVXDLGEYR2V426T4/)
+3. [1News "Drone footage shows huge extent of Hawke's Bay Flooding"](https://www.1news.co.nz/2023/02/14/drone-footage-shows-huge-extent-of-hawkes-bay-flooding/)
+4. [Gisborne District Council Facebook](https://www.facebook.com/GisborneDC/videos/tiniroto-road-opening/196339963114826/)
 - `Distribution`: N/A
 - `Constraints`: N/A
 - `Data Quality`: unknown
@@ -204,30 +209,14 @@ This metadata file can be found under data > metadata > 2018_Census_Statistical_
 | Date closed | N/A | date of road closure (or posting thereof) | string | unknown | ... | ... | ... |
 | Date opened | N/A | date of road opening to general traffic, even under restricted speeds or hours (or posting thereof) | string | unknown | ... | ... | ... |
 | Bridge| N/A | 0 if segment closed is not solely a bridge, 1 if segment closed is a bridge | boolean | unknown | \[0,1] | ... | ... |
+| Notes | N/A | notes including restrictions on access or time, or cause of road closure or re-opening | string | unknown | ... | ... | ... |
+| Source | N/A | source(s) of information. If multiple, separated by ; | string | unknown | ... | ... | ... |
 
 
 ### DATA SOURCES FOR ROAD CLOSURES
-
-- see the recovery newletters from waka kotahi (detailed, but the first and second letters missing) - https://www.nzta.govt.nz/projects/hawkes-bay-cyclone-recovery/media
-- see the waka kotahi state highways repair database and trace/manually copy the data - https://nzta.maps.arcgis.com/apps/dashboards/041d9f7c531d4f2488d1d1d9d6d6b86c
-- see the table for when access points at damaged bridges were restored - https://www.hastingsdc.govt.nz/services/roads-and-streets/road-works/
-- see NZ herald map for state highway road closures immediately following the storm - https://www.nzherald.co.nz/nz/cyclone-gabrielle-maps-show-widespread-disruption-to-north-island-roading-network/7IDFSZC2CZGJDNEHSBZTT7G2TM/
-- see the STUFF article with interactive dragonfly map showing flooding - it may be useful for creating a hypothetical map https://www.stuff.co.nz/national/300814264/cyclone-gabrielle-map-shows-scale-of-deluge-across-hawkes-bay
-- hawke's bay hazard portal https://gis.hbrc.govt.nz/hazards/
-- news article w some clusres https://www.nzherald.co.nz/hawkes-bay-today/news/gabrielles-anger-hits-hawkes-bay/D6S5TKAQPRBVXDLGEYR2V426T4/
-- Waka Kotahi Hawke's bay and Gisbourne FB. Note not including closures due to crashes or partial closures or one day/short term planned closures
-- NOTE likely to be underestimating travel delays due to on route speed restrictions and ongoing roadwork not captured in the road closure dataset
-- NOTE some people dont feel super comfortable on the temporary bailey bridges -> could be a deterrent to travel motnsh later
 - source of information about local local roads - https://www.nzherald.co.nz/nz/cyclone-gabrielle-maps-show-widespread-disruption-to-north-island-roading-network/7IDFSZC2CZGJDNEHSBZTT7G2TM/ -> shows a screenshot of the real time update map with crazy amount of closures. Not sure how to include that in this study
 - NOTE with some searching, was able to find napier city council postings about local road CLOSURES (in email), but none about reopenings. I wonder if there's a standard for draiage? ie after 1,2 weeks assume opened or not? Not sure if it makes sense to collect all the local data or just press on with the state highways. Surely same process could be repeated for the other major cities in the area; not sure how to get small towns
 - 
-
-
-Data sources used
-1. [Waka Kotahi NZ Transport Agency - Hawke's Bay and Gisborne Facebook Page](https://www.facebook.com/WakaKotahiHBG)
-2. [NZ Herald "Cyclone Gabrielle's anger hits Hawke's Bay: Hundreds of homes evacuated, thousands could be without power for days"](https://www.nzherald.co.nz/hawkes-bay-today/news/gabrielles-anger-hits-hawkes-bay/D6S5TKAQPRBVXDLGEYR2V426T4/)
-3. [1News "Drone footage shows huge extent of Hawke's Bay Flooding"](https://www.1news.co.nz/2023/02/14/drone-footage-shows-huge-extent-of-hawkes-bay-flooding/)
-4. [Gisborne District Council Facebook](https://www.facebook.com/GisborneDC/videos/tiniroto-road-opening/196339963114826/)
 
 
 ### DATA SOURCE FOR HEALTH PROVIDERS
@@ -347,6 +336,9 @@ These include:
   - confusion of spatial and a-spatial causation
   - ecological fallacy
   - uncertainty e.g. from spatial disaggregation, anonymization, differential privacy
+
+- NOTE likely to be underestimating travel delays due to on route speed restrictions and ongoing roadwork not captured in the road closure dataset
+- NOTE some people dont feel super comfortable on the temporary bailey bridges -> could be a deterrent to travel motnsh later
 
 ### Data transformations
 
