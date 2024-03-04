@@ -216,12 +216,13 @@ This metadata file can be found under data > metadata > 2018_Census_Statistical_
 ### DATA SOURCES FOR ROAD CLOSURES
 - source of information about local local roads - https://www.nzherald.co.nz/nz/cyclone-gabrielle-maps-show-widespread-disruption-to-north-island-roading-network/7IDFSZC2CZGJDNEHSBZTT7G2TM/ -> shows a screenshot of the real time update map with crazy amount of closures. Not sure how to include that in this study
 - NOTE with some searching, was able to find napier city council postings about local road CLOSURES (in email), but none about reopenings. I wonder if there's a standard for draiage? ie after 1,2 weeks assume opened or not? Not sure if it makes sense to collect all the local data or just press on with the state highways. Surely same process could be repeated for the other major cities in the area; not sure how to get small towns
-- 
+- *Question for PETE* is it better to use the more up to date road network data that does have the attribute data attached? based on the reports im seeing, it looks like the main focus of the recovery effort has been repair > rerouting... but then again some local roads may be gone for good.
 
 
 ### DATA SOURCE FOR HEALTH PROVIDERS
-- might be more rigorous to write a web scraping code but more efficient for me to just plug and chug to create a dataset: https://healthhb.co.nz/general-practices/
+- might be more rigorous to write a web scraping code but more efficient for me to just plug and chug to create a dataset: https://healthhb.co.nz/general-practices/. NOTE im not sure how often 'taking new patient' is updated and or how reflective it is of 2013, but may give an indication of how full the practice is. Since it doesnt have the update about cyclone gabrielle closures, it seems on the older side?
 - NOTE this would need to happen in QGIS by creating a new vector layer, plugging each address into google maps, and then copying in the coordinates. It would be great to scrape that but it seems pretty darn difficult!
+- NOTE it would be great to expand this research to include community and social services, of which there are >200 (and they can be filtered by category) on HealthPoint https://www.healthpoint.co.nz/community-health-and-social-services/hawkes-bay/ 
 
 
 
