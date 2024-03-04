@@ -212,6 +212,33 @@ This metadata file can be found under data > metadata > 2018_Census_Statistical_
 | Notes | N/A | notes including restrictions on access or time, or cause of road closure or re-opening | string | unknown | ... | ... | ... |
 | Source | N/A | source(s) of information. If multiple, separated by ; | string | unknown | ... | ... | ... |
 
+#### GP_HB_convertedpoints.shp NEED TO DO THE VARS
+
+**Standard Metadata**
+
+- `Abstract`: point data for general practitioners in Hawke's Bay
+- `Spatial Coverage`: Hawke's Bay Region
+- `Spatial Resolution`: point
+- `Spatial Reference System`: ESPG:2193
+- `Temporal Coverage`: unknown
+- `Temporal Resolution`: snapshot
+  `Lineage`: Created by study author Grace Sokolow using Health Hawke's Bay's [directory](https://healthhb.co.nz/general-practices/). The author created a CSV file by copying data for each provider into a spreadsheet. Coordinate data was obtained by pasting the address of each provider into google maps and copying the result into the CSV file. This is not the most efficient nor high quality method of data collection, but given the short time frame for analysis and the small size of the dataset, it was considered to be the best option. The author used the coordinate conversion tool in ArcGIS Pro to convert the coordinate data into points with CRS 2193 and exported it as a shapefile (after unsuccessfully attempting the same process in QGIS).
+- `Distribution`: N/A
+- `Constraints`: N/A
+- `Data Quality`: unknown
+- - `Variables`: 
+   | Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| Road | N/A | road name or identifier | string | unknown | ... | ... | ... |
+| Local | N/A | 0 if state highway, 1 if local road | boolean | unknown | \[0,1] | ... | ... |
+| A | N/A | one terminus of road closure | string | unknown | ... | ... | ... |
+| B | N/A | one terminus of road closure | string | unknown | ... | ... | ... |
+| Date closed | N/A | date of road closure (or posting thereof) | string | unknown | ... | ... | ... |
+| Date opened | N/A | date of road opening to general traffic, even under restricted speeds or hours (or posting thereof) | string | unknown | ... | ... | ... |
+| Bridge| N/A | 0 if segment closed is not solely a bridge, 1 if segment closed is a bridge | boolean | unknown | \[0,1] | ... | ... |
+| Notes | N/A | notes including restrictions on access or time, or cause of road closure or re-opening | string | unknown | ... | ... | ... |
+| Source | N/A | source(s) of information. If multiple, separated by ; | string | unknown | ... | ... | ... |
+
 
 ### DATA SOURCES FOR ROAD CLOSURES
 - source of information about local local roads - https://www.nzherald.co.nz/nz/cyclone-gabrielle-maps-show-widespread-disruption-to-north-island-roading-network/7IDFSZC2CZGJDNEHSBZTT7G2TM/ -> shows a screenshot of the real time update map with crazy amount of closures. Not sure how to include that in this study
