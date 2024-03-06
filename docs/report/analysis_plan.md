@@ -179,6 +179,10 @@ This metadata file can be found under data > metadata > 2018_Census_Statistical_
    | Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 
+NOTE DEVIATION FROM ORIGINAL PLAN 
+The author originally intended to download road data from 2023 or earlier so as to avoid the inclusion of a road that was destroyed during Cyclone Gabrielle in the netwrok analysis. However, there is no road network data available from immediately before the storm; the latest possible date before February 2023 is September 2022. Furthermore, the data available for September 2022 was incomplete and contained no attribute data. For the sake of keeping the project moving, the author pivoted to the most up to date road netowrk data seeing as, based on messaging from Waka Kotahi following the storm, the emphasis during rcovery was rebuilding, rather than rerouting, key roads. 
+author downloaded most up to date data on March 6 from [LINZ](https://data.linz.govt.nz/layer/50329-nz-road-centrelines-topo-150k/); see [metadata](https://docs.topo.linz.govt.nz/data-dictionary/tdd-class-road_cl.html)
+
 
 #### road_closures.xlsx
 
