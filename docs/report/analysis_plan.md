@@ -404,7 +404,14 @@ Be sure to include any steps planned to **exclude** observations with *missing* 
    - INCOME DATA TO BE ADDED
 These variables were chosen based on the Hawke's Bay District Health Board's 2014 report, [Health Equity in Hawke's Bay](https://www.ourhealthhb.nz/assets/Strategy-Documents/13676-HealthEquity-Report-PRINTlr.pdf), which explains that health inequalities are prevalent for people who are Maori, Pacifica, and or living in poverty. Total population count is used to calculate percentages rather than total responses for each variable category to set a consistent minimum standard of self-reporting.
 3. Create a table of summary statistics for the entire district, including the mean, median, standard deviation, 10th percentile, and 90th percentile. The mean will give a measure of centrality that is more sensitive to the magnitude of its outliers, while the median will give a measure of centrality that is not. The standard deviation gives insight into how bunched up or spread out the data is, which will help identify the variables with the most variation across statistical area 1s. The 10th and 90th percentile measures will set markers against which to identify specific statistical area 1s that constitute extreme cases of a variable. These areas will be flagged for further investigation into unequal experiences of reduced health care access or prioritized recovery.
-4. Create a choropleth map for each variable to understand its spatial distribution. 
+4. Create a choropleth map for each variable to understand its spatial distribution.
+
+#### Part 2: Network Analysis
+The author originally intended to use LINZ road network data and OSMnx as the road network processing tool. However, for the purposes of beta testing (proof of concept), the author is choosing to use OSM data. Once the analysis workflow has been developed, the author will return to the question of which source data is more appropriate.
+1. Generate centroids for each statistical area 1.
+2. 
+
+OSM data updated [weekly](https://planet.openstreetmap.org/). 
 
 Describe the methods of analysis that will directly test the hypotheses or provide results to answer the research questions.
 This section should explicitly define any spatial / statistical *models* and their *parameters*, including *grouping* criteria, *weighting* criteria, and *significance thresholds*.
