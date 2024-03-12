@@ -155,6 +155,11 @@ This metadata file can be found under data > metadata > 2018_Census_Statistical_
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 | SA12018_V1_00 | SA1 | unique identifier for SA1 geometries | vector | unknown | ... | ... | 16 out of 29,889 |
 
+#### nz_land_districts.gpkg 
+https://data.linz.govt.nz/layer/50785-nz-land-districts/ DOWNLOADED MARCH 11
+
+
+
 #### nz-road-centrelines-topo-1500k.gpkg
 
 **Standard Metadata**
