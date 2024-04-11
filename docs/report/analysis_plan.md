@@ -73,6 +73,7 @@ WHEN IT COMES TIME FOR NETWORK ANALYSIS, SEE BEN CORDOLA'S FINAL PROJECT AND OR 
 
 Each of the next subsections describes one data source.
 
+## NZ figure data https://data.linz.govt.nz/layer/51153-nz-coastlines-and-islands-polygons-topo-150k/
 
 #### Individual_part1_totalNZ-wide_format_updated_16-7-20.csv
 
