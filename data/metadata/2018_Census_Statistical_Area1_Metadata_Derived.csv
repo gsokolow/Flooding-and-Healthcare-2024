@@ -1,15 +1,6 @@
 ,data type,minimum,maximum,NaN frequency,definition
 Area_code_and_description,object,001 Far North District,Total NZ (Ward),0.0,unique identifier for statistical area 1
 Census_2018_usually_resident_population_count,int64,0,4699755,0.0,number of usual residents (as opposed to population at the moment of census collection) in a given statistical area 1 in 2018
-Census_2018_Sex_1_Male_CURP,float64,0.0,2319558.0,0.017680883121675227,number of usual male residents in 2018
-Census_2018_Sex_2_Female_CURP,float64,0.0,2380197.0,0.017680883121675227,number of usual female residents in 2018
-Census_2018_Sex_Total_CURP,int64,0,4699755,0.0,total number of usual residents for which data on sex was collected
-Census_2018_median_age_CURP,float64,5.8,92.3,0.018203622274837798,median age of usual residents in 2018
-Census_2018_Age_broad_groups_1_Under_15_years_CURP,float64,0.0,923403.0,0.019064604409458504,number of usual residents under 15 years old in 2018
-Census_2018_Age_broad_groups_2_15_to_29_years_CURP,float64,0.0,963687.0,0.019064604409458504,number of usual residents aged 15-29 in 2018
-Census_2018_Age_broad_groups_3_30_to_64_years_CURP,float64,0.0,2097498.0,0.018880108237754066,number of usual residents aged 30-64 in 2018
-Census_2018_Age_broad_groups_4_65_years_and_over_CURP,float64,0.0,715167.0,0.019033855047507764,number of usual residents aged 65 and older in 2018
-Census_2018_Age_broad_groups_Total_CURP,int64,0,4699755,0.0,total number of usual residents placed in the 4 listed age groups in 2018
 Census_2018_Ethnicity_grouped_total_responses_level_1_1_European_CURP,float64,0.0,3297864.0,0.01866486270409889,total number of usual residents who self-identify as ethnically European (note that respondents may choose more than one ethnicity)'
 Census_2018_Ethnicity_grouped_total_responses_level_1_2_Maori_CURP,float64,0.0,775836.0,0.020386826973340304,total number of usual residents who self-identify ethnically as Maori (note that respondents may choose more than one ethnicity)'
 Census_2018_Ethnicity_grouped_total_responses_level_1_3_Pacific_Peoples_CURP,float64,0.0,381642.0,0.02044832569724178,total number of usual residents who self-identify ethnically as Pacific Peoples (note that respondents may choose more than one ethnicity)'
