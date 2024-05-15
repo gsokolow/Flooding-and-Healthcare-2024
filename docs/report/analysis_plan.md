@@ -36,14 +36,12 @@ In order to prepare ourselves for the climate-altered future that is coming, and
 
 ## Study design
 
-This is an original, observational study. It investigates three research questions:
-1. How long (on average) did it take a resident of Hastings District to get to their nearest primary healthcare provider prior to Cyclone Gabrielle?
-2. How long (on average) did it take a resident of Hastings District to get to their nearest primary healthcare provider immediately following Cyclone Gabrielle? 3 months later? 6 months later?
-3. What population groups were or continue to be most affected by the potential changes in primary healthcare access caused by the storm?
+This is an original, observational study. It investigates two primary research questions:
+1. How did road access to primary care facilities change as a result of Cyclone Gabrielle?
+2. What characterizes the communities affected?
 
-Questions 1 and 2 will be investigated using network analysis. 
-Centroids will be created first based on the geometric centers of statistical area 1 geometries, but alternate population weighted centroids may be created for statistical area 2 geometries using meshblock population counts. 
-Question 3 will be investigated by weighting the travel time from a given geometry by the proportion of people who are at a particular socioeconomic advantage or disadvantage.
+Question 1 will be investigated using network analysis. 
+Question 2 will be investigated through demographic analysis and statistical testing of correlations between population and impact groups. 
 
 ## Materials and procedure
 
