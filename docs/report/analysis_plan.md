@@ -47,31 +47,17 @@ Question 2 will be investigated through demographic analysis and statistical tes
 
 ### Computational environment
 
-Define the hardware, operating system, and software requirements for the research.
-Include citations to important software projects, plugins or packages and their versions.
-
 Python 3.9
+
+Additional packages required are specified in proceedure > code > 01-Jupyter Notebook.ipynb.
 
 ### Data and variables
 
-Describe the **data sources** and **variables** to be used.
-Data sources may include plans for observing and recording **primary data** or descriptions of **secondary data**.
-For secondary data sources with numerous variables, the analysis plan authors may focus on documenting only the variables intended for use in the study.
-
-Primary data sources for the study are to include ... . HEALTHCARE DATASET?
-Secondary data sources for the study are to include ... . CENSUS DATA
-ALL SECONDARY?
-NEXT; ADD IN THE GEOMETRY, WHICH HAS TO BE DOWNLOADED SEP. WE WILL USE MATCHING 2018 FOR EASE (?)
-***IMPORTANT CODING NOTES FROM JOE FEB 13 AM
-PININV DOES THE SAME THING THAT CREATING A NEW CONDA ENVIRONMENT DOES. DELETE THE FILES CREATED FOR IT AND STICK W CONDA, DOCUMENTING ALL DEPENDENCIES AND NEWLY IMPORTED BACKAGES IN THE REQUIREMENTS .TXT FILE.
-GO TO OSM WEBSITE FOR INSTRUCTIONS ON CREATING A CLEAN CONDA ENVIRONMENT AND DOWNLOADING OSM AS THE FIRST PACKAGE TO AVOID HEADACHES DOWN THE LINE.
-MAYBE ADJUST THE DOWNLOADED XLSX FILE AND USE CSV INSTEAD.
-
-WHEN IT COMES TIME FOR NETWORK ANALYSIS, SEE BEN CORDOLA'S FINAL PROJECT AND OR SAM REUBEN'S INDEP STUDY FOR SIMPLIFIED NETWORK ANALYSIS CODE.
-
 Each of the next subsections describes one data source.
 
-## NZ figure data https://data.linz.govt.nz/layer/51153-nz-coastlines-and-islands-polygons-topo-150k/
+## NZ figure data 
+Data from this source was used to create figures included in this study.
+https://data.linz.govt.nz/layer/51153-nz-coastlines-and-islands-polygons-topo-150k/
 
 #### Individual_part1_totalNZ-wide_format_updated_16-7-20.csv
 
@@ -160,8 +146,6 @@ This metadata file can be found under data > metadata > 2018_Census_Statistical_
 #### nz_land_districts.gpkg 
 https://data.linz.govt.nz/layer/50785-nz-land-districts/ DOWNLOADED MARCH 11
 
-
-
 #### nz-road-centrelines-topo-1500k.gpkg
 
 **Standard Metadata**
@@ -223,7 +207,7 @@ author downloaded most up to date data on March 6 from [LINZ](https://data.linz.
 | Notes | N/A | notes including restrictions on access or time, or cause of road closure or re-opening | string | unknown | ... | ... | ... |
 | Source | N/A | source(s) of information. If multiple, separated by ; | string | unknown | ... | ... | ... |
 
-#### GP_HB_convertedpoints.shp NEED TO DO THE VARS
+#### GP_HB_convertedpoints.shp
 
 **Standard Metadata**
 
@@ -240,210 +224,13 @@ author downloaded most up to date data on March 6 from [LINZ](https://data.linz.
 - - `Variables`: 
    | Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| Road | N/A | road name or identifier | string | unknown | ... | ... | ... |
-| Local | N/A | 0 if state highway, 1 if local road | boolean | unknown | \[0,1] | ... | ... |
-| A | N/A | one terminus of road closure | string | unknown | ... | ... | ... |
-| B | N/A | one terminus of road closure | string | unknown | ... | ... | ... |
-| Date closed | N/A | date of road closure (or posting thereof) | string | unknown | ... | ... | ... |
-| Date opened | N/A | date of road opening to general traffic, even under restricted speeds or hours (or posting thereof) | string | unknown | ... | ... | ... |
-| Bridge| N/A | 0 if segment closed is not solely a bridge, 1 if segment closed is a bridge | boolean | unknown | \[0,1] | ... | ... |
-| Notes | N/A | notes including restrictions on access or time, or cause of road closure or re-opening | string | unknown | ... | ... | ... |
-| Source | N/A | source(s) of information. If multiple, separated by ; | string | unknown | ... | ... | ... |
+| Name | N/A | Name of primary care provider | string | unknown | ... | ... | ... |
+| New Patients | N/A | N if not taking new patients, Y if taking new patients, C if taking new patients under certain conditions | string | unknown | ... | ... | ... |
+| Address | N/A | Street address of provider | string | unknown | ... | ... | ... |
+| X | N/A | x coordinate of provider location | int | unknown | ... | ... | ... |
+| Y | N/A | y coordinate of provider location | int | unknown | ... | ... | ... |
+| Notes | N/A | additional notes | string | unknown | ... | ... | ... |
 
+### Data Transformations & Analysis
 
-### DATA SOURCES FOR ROAD CLOSURES
-- source of information about local local roads - https://www.nzherald.co.nz/nz/cyclone-gabrielle-maps-show-widespread-disruption-to-north-island-roading-network/7IDFSZC2CZGJDNEHSBZTT7G2TM/ -> shows a screenshot of the real time update map with crazy amount of closures. Not sure how to include that in this study
-- NOTE with some searching, was able to find napier city council postings about local road CLOSURES (in email), but none about reopenings. I wonder if there's a standard for draiage? ie after 1,2 weeks assume opened or not? Not sure if it makes sense to collect all the local data or just press on with the state highways. Surely same process could be repeated for the other major cities in the area; not sure how to get small towns
-- *Question for PETE* is it better to use the more up to date road network data that does have the attribute data attached? based on the reports im seeing, it looks like the main focus of the recovery effort has been repair > rerouting... but then again some local roads may be gone for good.
-
-
-### DATA SOURCE FOR HEALTH PROVIDERS
-- might be more rigorous to write a web scraping code but more efficient for me to just plug and chug to create a dataset: https://healthhb.co.nz/general-practices/. NOTE im not sure how often 'taking new patient' is updated and or how reflective it is of 2013, but may give an indication of how full the practice is. Since it doesnt have the update about cyclone gabrielle closures, it seems on the older side?
-- NOTE this would need to happen in QGIS by creating a new vector layer, plugging each address into google maps, and then copying in the coordinates. It would be great to scrape that but it seems pretty darn difficult!
-- NOTE it would be great to expand this research to include community and social services, of which there are >200 (and they can be filtered by category) on HealthPoint https://www.healthpoint.co.nz/community-health-and-social-services/hawkes-bay/ 
-
-
-
-**PRIMARY**
-    `Abstract`: Brief description of the data source
-- `Spatial Coverage`: Specify the geographic extent of your study. This may be a place name and link to a feature in a gazetteer like GeoNames or OpenStreetMap, or a well known text (WKT) representation of a bounding box.
-- `Spatial Resolution`: Specify the spatial resolution as a scale factor, description of the level of detail of each unit of observation (including administrative level of administrative areas), and/or or distance of a raster GRID size
-- `Spatial Reference System`: Specify the geographic or projected coordinate system for the study
-- `Temporal Coverage`: Specify the temporal extent of your study---i.e. the range of time represented by the data observations.
-- `Temporal Resolution`: Specify the temporal resolution of your study---i.e. the duration of time for which each observation represents or the revisit period for repeated observations
-- `Lineage`: Describe and/or cite data sources and/or methodological steps planned to create this data source.
-  - sampling scheme, including spatial sampling
-  - target sample size and method for determining sample size
-  - stopping criteria for data collection and sampling (e.g. sample size, time elapsed)
-  - de-identification / anonymization
-  - experimental manipulation
-- `Distribution`: Describe who will make the data available and how?
-- `Constraints`: Legal constraints for *access* or *use* to protect *privacy* or *intellectual property rights*
-- `Data Quality`: State any planned quality assessment
-- `Variables`: For each variable, enter the following information. If you have two or more variables per data source, you may want to present this information in table form (shown below)
-  - `Label`: variable name as used in the data or code
-  - `Alias`: intuitive natural language name
-  - `Definition`: Short description or definition of the variable. Include measurement units in description.
-  - `Type`: data type, e.g. character string, integer, real
-  - `Accuracy`: e.g. uncertainty of measurements
-  - `Domain`: Expected range of Maximum and Minimum of numerical data, or codes or categories of nominal data, or reference to a standard codebook
-  - `Missing Data Value(s)`: Values used to represent missing data and frequency of missing data observations
-  - `Missing Data Frequency`: Frequency of missing data observations: not yet known for data to be collected
-
-| Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| variable1 | ... | ... | ... | ... | ... | ... | ... |
-| variable2 | ... | ... | ... | ... | ... | ... | ... |
-
-#### Primary data source2 name
-
-... same form as above...
-
-#### Secondary data source1 name
-
-**Standard Metadata**
-
-- `Abstract`: Brief description of the data source
-- `Spatial Coverage`: Specify the geographic extent of your study. This may be a place name and link to a feature in a gazetteer like GeoNames or OpenStreetMap, or a well known text (WKT) representation of a bounding box.
-- `Spatial Resolution`: Specify the spatial resolution as a scale factor, description of the level of detail of each unit of observation (including administrative level of administrative areas), and/or or distance of a raster GRID size
-- `Spatial Reference System`: Specify the geographic or projected coordinate system for the study
-- `Temporal Coverage`: Specify the temporal extent of your study---i.e. the range of time represented by the data observations.
-- `Temporal Resolution`: Specify the temporal resolution of your study---i.e. the duration of time for which each observation represents or the revisit period for repeated observations
-- `Lineage`: Describe and/or cite data sources and/or methodological steps used to create this data source
-- `Distribution`: Describe how the data is distributed, including any persistent identifier (e.g. DOI) or URL for data access
-- `Constraints`: Legal constraints for *access* or *use* to protect *privacy* or *intellectual property rights*
-- `Data Quality`: State result of quality assessment or state "Quality unknown"
-- `Variables`: For each variable, enter the following information. If you have two or more variables per data source, you may want to present this information in table form (shown below)
-  - `Label`: variable name as used in the data or code
-  - `Alias`: intuitive natural language name
-  - `Definition`: Short description or definition of the variable. Include measurement units in description.
-  - `Type`: data type, e.g. character string, integer, real
-  - `Accuracy`: e.g. uncertainty of measurements
-  - `Domain`: Range (Maximum and Minimum) of numerical data, or codes or categories of nominal data, or reference to a standard codebook
-  - `Missing Data Value(s)`: Values used to represent missing data and frequency of missing data observations
-  - `Missing Data Frequency`: Frequency of missing data observations
-
-| Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| variable1 | ... | ... | ... | ... | ... | ... | ... |
-| variable2 | ... | ... | ... | ... | ... | ... | ... |
-
-#### Secondary data source2 name
-
-... same form as above...
-
-### Prior observations  
-
-Prior experience with the study area, prior data collection, or prior observation of the data can compromise the validity of a study, e.g. through p-hacking.
-Therefore, disclose any prior experience or observations at the time of study pre-registration here, with example text below:
-
-At the time of this study pre-registration, the authors had _____ prior knowledge of the geography of the study region with regards to the ____ phenomena to be studied.
-This study is related to ____ prior studies by the authors
-
-For each primary data source, declare the extent to which authors had already engaged with the data:
-
-- [ ] no data collection has started
-- [ ] pilot test data has been collected
-- [ ] data collection is in progress and data has not been observed
-- [ ] data collection is in progress and __% of data has been observed
-- [ ] data collection is complete and data has been observed. Explain how authors have already manipulated / explored the data.
-
-For each secondary source, declare the extent to which authors had already engaged with the data:
-
-- [ ] data is not available yet
-- [ ] data is available, but only metadata has been observed
-- [ ] metadata and descriptive statistics have been observed
-- [ ] metadata and a pilot test subset or sample of the full dataset have been observed
-- [ ] the full dataset has been observed. Explain how authors have already manipulated / explored the data.
-
-If pilot test data has been collected or acquired, describe how the researchers observed and analyzed the pilot test, and the extent to which the pilot test influenced the research design.
-
-### Bias and threats to validity
-
-Given the research design and primary data to be collected and/or secondary data to be used, discuss common threats to validity and the approach to mitigating those threats, with an emphasis on geographic threats to validity.
-
-These include:
-  - uneven primary data collection due to geographic inaccessibility or other constraints
-  - multiple hypothesis testing
-  - edge or boundary effects
-  - the modifiable areal unit problem
-  - nonstationarity
-  - spatial dependence or autocorrelation
-  - temporal dependence or autocorrelation
-  - spatial scale dependency
-  - spatial anisotropies
-  - confusion of spatial and a-spatial causation
-  - ecological fallacy
-  - uncertainty e.g. from spatial disaggregation, anonymization, differential privacy
-
-- NOTE likely to be underestimating travel delays due to on route speed restrictions and ongoing roadwork not captured in the road closure dataset
-- NOTE some people dont feel super comfortable on the temporary bailey bridges -> could be a deterrent to travel motnsh later
-
-### Data transformations
-
-Describe all data transformations planned to prepare data sources for analysis.
-This section should explain with the fullest detail possible how to transform data from the **raw** state at the time of acquisition or observation, to the pre-processed **derived** state ready for the main analysis.
-Including steps to check and mitigate sources of **bias** and **threats to validity**.
-The method may anticipate **contingencies**, e.g. tests for normality and alternative decisions to make based on the results of the test.
-More specifically, all the **geographic** and **variable** transformations required to prepare input data as described in the data and variables section above to match the study's spatio-temporal characteristics as described in the study metadata and study design sections.
-Visual workflow diagrams may help communicate the methodology in this section.
-
-Examples of **geographic** transformations include coordinate system transformations, aggregation, disaggregation, spatial interpolation, distance calculations, zonal statistics, etc.
-
-Examples of **variable** transformations include standardization, normalization, constructed variables, imputation, classification, etc.
-
-Be sure to include any steps planned to **exclude** observations with *missing* or *outlier* data, to **group** observations by *attribute* or *geographic* criteria, or to **impute** missing data or apply spatial or temporal **interpolation**.
-
-### Analysis
-
-#### Part 1: Demographic Analysis
-1. Join population data for the 2018 statistical area 1s (Individual_part1_totalNZ-wide_format_updated_16-7-20.csv) to the 2018 geometry for statistical area 1s (nz-road-centrelines-topo-1500k.gpkg) using the unique statistical area 1 identifiers ("Area code and description" and "SA12018_V1_00" respectively).
-2. Calculate the percentage of the total population (Census_2018_usually_resident_population_count) that is represented in each of the following variables:
-   - Census_2018_Ethnicity_grouped_total_responses_level_1_1_European_CURP
-   - Census_2018_Ethnicity_grouped_total_responses_level_1_3_Pacific_Peoples_CURP
-   - Census_2018_Ethnicity_grouped_total_responses_level_1_2_Maori_CURP
-   - Census_2018_Ethnicity_grouped_total_responses_level_1_4_Asian_CURP
-   - Census_2018_Ethnicity_grouped_total_responses_level_1_6_Other_Ethnicity_CURP
-   - Census_2018_Ethnicity_grouped_total_responses_level_2_61_New_Zealander_CURP
-   - Census_2018_Maori_descent_01_Maori_descent_CURP
-   - Census_2018_Maori_descent_02_No_Maori_descent_CURP
-   - Census_2018_Maori_descent_04_Dont_know_CURP
-   - INCOME DATA TO BE ADDED
-These variables were chosen based on the Hawke's Bay District Health Board's 2014 report, [Health Equity in Hawke's Bay](https://www.ourhealthhb.nz/assets/Strategy-Documents/13676-HealthEquity-Report-PRINTlr.pdf), which explains that health inequalities are prevalent for people who are Maori, Pacifica, and or living in poverty. Total population count is used to calculate percentages rather than total responses for each variable category to set a consistent minimum standard of self-reporting.
-3. Create a table of summary statistics for the entire district, including the mean, median, standard deviation, 10th percentile, and 90th percentile. The mean will give a measure of centrality that is more sensitive to the magnitude of its outliers, while the median will give a measure of centrality that is not. The standard deviation gives insight into how bunched up or spread out the data is, which will help identify the variables with the most variation across statistical area 1s. The 10th and 90th percentile measures will set markers against which to identify specific statistical area 1s that constitute extreme cases of a variable. These areas will be flagged for further investigation into unequal experiences of reduced health care access or prioritized recovery.
-4. Create a choropleth map for each variable to understand its spatial distribution.
-
-#### Part 2: Network Analysis
-The author originally intended to use LINZ road network data and OSMnx as the road network processing tool. However, for the purposes of beta testing (proof of concept), the author is choosing to use OSM data. Once the analysis workflow has been developed, the author will return to the question of which source data is more appropriate.
-1. Generate centroids for each statistical area 1.
-2. 
-
-OSM data updated [weekly](https://planet.openstreetmap.org/). 
-
-Describe the methods of analysis that will directly test the hypotheses or provide results to answer the research questions.
-This section should explicitly define any spatial / statistical *models* and their *parameters*, including *grouping* criteria, *weighting* criteria, and *significance thresholds*.
-Also explain any follow-up analyses or validations.
-
-## Results
-
-Describe how results are to be presented.
-
-## Discussion
-
-Describe how the results are to be interpreted *vis a vis* each hypothesis or research question.
-
-## Integrity Statement
-
-Include an integrity statement - The authors of this preregistration state that they completed this preregistration to the best of their knowledge and that no other preregistration exists pertaining to the same hypotheses and research.
-If a prior registration *does* exist, explain the rationale for revising the registration here.
-
-## Acknowledgements
-
-- `Funding Name`: name of funding for the project
-- `Funding Title`: title of project grant
-- `Award info URI`: web address for award information
-- `Award number`: award number
-
-This report is based upon the template for Reproducible and Replicable Research in Human-Environment and Geographical Sciences, DOI:[10.17605/OSF.IO/W29MQ](https://doi.org/10.17605/OSF.IO/W29MQ)
-
-## References
+Complete documentation of the analysis and improvements to be made can be found in the [study report](https://gsokolow.github.io/Flooding-and-Healthcare-2024/). 
